@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+
+.loan-calculator {
+  @apply max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden;
+}
+
+.loan-box {
+  @apply p-4 mb-4 rounded-lg;
+}
+
+.loan-box h2 {
+  @apply text-lg font-semibold mb-2;
+}
+
+.loan-box p {
+  @apply text-2xl font-bold;
+}
+
+input[type="range"] {
+  @apply w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none w-6 h-6 bg-blue-500 rounded-full cursor-pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply w-6 h-6 bg-blue-500 rounded-full cursor-pointer;
+}
